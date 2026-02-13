@@ -16,11 +16,13 @@ define( 'FIL_URL', plugin_dir_url( __FILE__ ) );
 require_once FIL_PATH . 'admin/class-cpt.php';
 require_once FIL_PATH . 'admin/class-meta-boxes.php';
 require_once FIL_PATH . 'admin/class-admin-list.php'; 
+require_once FIL_PATH . 'public/class-shortcode.php';
 
 
 function fil_init() {
     new \FireIncidentLog\Admin\CPT();
     new \FireIncidentLog\Admin\MetaBoxes();
-    new \FireIncidentLog\Admin\AdminList(); 
+    new \FireIncidentLog\Admin\AdminList();
+    new \FireIncidentLog\PublicSide\Shortcode(); 
 }
 add_action( 'plugins_loaded', 'fil_init' );
