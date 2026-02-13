@@ -12,7 +12,7 @@ class CPT {
                 'name' => 'Zásahy',
                 'singular_name' => 'Zásah',
                 'add_new' => 'Nový zásah',
-                'add_new_item' => 'Přidat nový zásah (Detaily)',
+                'add_new_item' => 'Přidat nový zásah',
             ],
             'public' => true,
             'menu_icon' => 'dashicons-shield',
