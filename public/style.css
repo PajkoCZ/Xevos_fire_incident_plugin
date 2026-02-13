@@ -1,0 +1,25 @@
+.fil-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.fil-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.fil-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+.fil-card.type-pozar { border-top: 4px solid #d32f2f; }
+.fil-card.type-nehoda { border-top: 4px solid #1976d2; }
+
+.fil-header { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.85em; color: #666; }
+.fil-tag { font-weight: bold; text-transform: uppercase; }
+.fil-title { margin: 0 0 10px 0; font-size: 1.2em; line-height: 1.3; }
+.fil-footer { font-size: 0.9em; color: #555; }
