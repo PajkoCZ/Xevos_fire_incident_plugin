@@ -11,4 +11,11 @@ if (!defined('ABSPATH')) exit;
 define( 'FIL_PATH', plugin_dir_patch(__FILE__) );
 define( 'FIL_URL', plugin_dir_url(__FILE__) );
 
+require_once FIL_PATH . '/admin/class-cpt.php';
+
+function fil_init() {
+    new \FireIncidentLog\Admin\CPT();
+}
+add_action('plugin_loaded', 'fil_init');
+
 ?>
