@@ -15,6 +15,9 @@ class Shortcode {
         $query = new \WP_Query([
             'post_type' => 'incident',
             'posts_per_page' => 9,
+            'meta_key'       => '_fil_date',  
+            'orderby'        => 'meta_value', 
+            'order'          => 'DESC',
         ]);
 
         if ( ! $query->have_posts() ) return 'Žádné zásahy.';
